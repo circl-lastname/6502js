@@ -1546,7 +1546,7 @@ function SimulatorWidget(node) {
 
       if ((regPC === 0) || (!codeRunning && !debugging)) {
         stop();
-        message("Program end at PC=$" + addr2hex(regPC - 1));
+        message("\nProgram end at PC=$" + addr2hex(regPC - 1));
         ui.stop();
       }
     }
