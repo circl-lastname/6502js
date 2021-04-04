@@ -2486,8 +2486,8 @@ function SimulatorWidget(node) {
   }
 
   // message() - Prints text in the message window
-  function message(text) {
-    $node.find('.messages code').append(text + '\n').scrollTop(10000);
+  function message(text, eol = "\n") {
+    $node.find('.messages code').append(text + eol).scrollTop(10000);
   }
 
 
