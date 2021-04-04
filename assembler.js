@@ -1500,6 +1500,7 @@ function SimulatorWidget(node) {
         stop();
         ui.stop();
       } else {
+        $node.find('.messages code').empty();
         ui.play();
         codeRunning = true;
         executeId = setInterval(multiExecute, 15);
