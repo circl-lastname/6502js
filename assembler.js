@@ -231,6 +231,9 @@ function SimulatorWidget(node) {
       if ((addr >= 0x200) && (addr <= 0x5ff)) {
         display.updatePixel(addr);
       }
+      if (addr == 0xfd) {
+        message(String.fromCharCode(value), "");
+      }
     }
 
     // storeKeypress() - Store keycode in ZP $ff
